@@ -14,6 +14,10 @@ class Todo {
 export default class TodoDataService extends Service {
   @tracked todos = A([]);
 
+  get all() {
+    return this.todos;
+  }
+
   @action
   add(text) {
     let newTodo = new Todo(text);
