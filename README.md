@@ -1,7 +1,6 @@
-# todomvc
+# Todo List App - Ember.js
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+The infamous Todo List app, used by millions to gain familiarity with languages and frameworks. Project was created to get experience with Ember.js components, services, and routes.
 
 ## Prerequisites
 
@@ -45,7 +44,7 @@ Make use of the many generators for code, try `ember help generate` for more det
 
 ### Deploying
 
-Specify what it takes to deploy your app.
+After building the app you are able to deploy on the service of your choice. I would suggest using AWS EC2 or Heroku.
 
 ## Further Reading / Useful Links
 
