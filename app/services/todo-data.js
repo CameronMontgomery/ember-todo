@@ -1,4 +1,3 @@
-import { A } from '@ember/array';
 import Service from '@ember/service';
 import { tracked } from '@glimmer/tracking';
 import { action } from '@ember/object';
@@ -12,7 +11,7 @@ class Todo {
 }
 
 export default class TodoDataService extends Service {
-  @tracked todos = A([]);
+  @tracked todos = [];
 
   get all() {
     return this.todos;
@@ -36,5 +35,10 @@ export default class TodoDataService extends Service {
   @action
   clearCompleted() {
     this.todos = this.incomplete;
+  }
+
+  @action
+  toggleCompletion(todo) {
+    todo.isCompleted = !todo.isCompleted;
   }
 }
