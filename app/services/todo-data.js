@@ -25,6 +25,14 @@ export default class TodoDataService extends Service {
     return this.incomplete.length === 1;
   }
 
+  // get completed() {
+  //   return this.todos.filterBy('isCompleted', true);
+  // }
+
+  get completed() {
+    return this.todos.filter((todo) => todo.isCompleted);
+  }
+
   @action
   add(text) {
     let newTodo = new Todo(text);
